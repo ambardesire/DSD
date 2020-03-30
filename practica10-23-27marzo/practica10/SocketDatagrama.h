@@ -11,14 +11,16 @@
 #include "PaqueteDatagrama.h"
 #include <arpa/inet.h>
 
+#include <fstream>
+#include <errno.h>
+#include <sys/time.h>
+
 class SocketDatagrama{
 
 public:
-    SocketDatagrama(int = 0);
+    SocketDatagrama(int puerto);
     ~SocketDatagrama();
-    
     int recibe(PaqueteDatagrama & p);
-    
     int envia(PaqueteDatagrama & p);
 private:
     struct sockaddr_in direccionLocal;

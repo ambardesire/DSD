@@ -4,7 +4,7 @@
 SocketDatagrama::SocketDatagrama(int puerto)
 {
     s = socket(AF_INET, SOCK_DGRAM, 0);
-    bzero((char *)&direccionLocal, sizeof(direccionLocal));
+    bzero((char *)&direccionLocal, sizeof(direccionLocal));	
     direccionLocal.sin_family = AF_INET;
     direccionLocal.sin_addr.s_addr = INADDR_ANY;
     direccionLocal.sin_port = htons(puerto);
@@ -15,7 +15,6 @@ SocketDatagrama::~SocketDatagrama()
 {
     //close(s);
 }
-
 
 int SocketDatagrama::recibe(PaqueteDatagrama & p)
 {
@@ -30,7 +29,6 @@ int SocketDatagrama::recibe(PaqueteDatagrama & p)
     std::cout << "IP: " << p.obtieneDireccion() << endl;
     return regreso;
 }
-
 
 int SocketDatagrama::envia(PaqueteDatagrama & p)
 {

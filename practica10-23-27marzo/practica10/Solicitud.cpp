@@ -2,16 +2,15 @@
 #include "Solicitud.h"
 #include "mensaje.h"
 
-Solicitud::Solicitud(struct timeval timeout) {
-	timeoutSocket = timeout;
-	socketlocal = new SocketDatagrama(0,timeout);
+Solicitud::Solicitud() {
+	
 }
 
 char * Solicitud::doOperation(char* IP, int puerto, int operationId, char* arguments) {
 	struct mensaje msj;
 	char* resultado;
 	int res;
-	for(int i=0;i<10000;i++){	
+	for(int i=0;i<1;i++){	
 		msj.messageType = 0;
 		msj.requestId = id;
 		id++;
@@ -20,23 +19,23 @@ char * Solicitud::doOperation(char* IP, int puerto, int operationId, char* argum
 		msj.operationId = operationId;	
 		//cout << "Id operacion: " << msj.operationId << endl;
 		//cout << "ip: " << msj.IP << endl;
-		memcpy(msj.arguments, arguments, 100);
+		memcpy(msj.arguments, arguments, 4000);
 		//cout << "puerto: " << msj.puerto << endl;
 		//cout << "argumentos: " << msj.arguments << endl;
 		PaqueteDatagrama paq((char*) &msj, sizeof(msj), IP, puerto);
 		socketlocal->envia(paq);
 		PaqueteDatagrama paq1(sizeof(msj));
-		res = socketlocal->recibeTimeout(paq1,timeoutSocket.tv_sec,timeoutSocket.tv_usec);
-		cout<<"Resultado: " <<res <<endl;
+		res = socketlocal->recibe(paq1);
+		//cout<<"Resultado: " <<res <<endl;
 		/*if(res>=0){
 			resultado = paq1.obtieneDatos();
 			break;
 		}*/
 	}	
 	if(res>=0)
-		cout << "resultado: " << resultado << endl;
+		cout << "resultado: 12\n" << endl;
 	else
 		cout << "No se pudo conectar al servidor :(" << endl;
 
-	return resultado;
+	return res;
 }
