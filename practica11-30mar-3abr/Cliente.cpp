@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 	unsigned int nbdLocal = 0;
 	unsigned int nbdServidor = 0;
 	// int sumado = 0;
-	char IP[16] = "127.0.0.1";
+	char IP[16] = "192.168.15.17";
 	int sumado = (rand() % 9) + 1;
 	
 	struct Mensaje *resp = (struct Mensaje *)cl.doOperation(IP,7200,1,(char *)&sumado, 0);
