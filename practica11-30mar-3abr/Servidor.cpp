@@ -4,7 +4,17 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-	Respuesta srv(7200);
+	int puerto = 0;
+
+	if(argc == 2) {
+		puerto = atoi(argv[1]);
+	} else {
+		cout << "Ingrese el comando de forma correcta" << endl;
+		cout << "\t ./Servidor <puerto>";
+		exit(-2);
+	}
+
+	Respuesta srv(puerto);
 	unsigned int nbd = 0;
 	unsigned int idProcesada = 0;
 	cout << "Escuchando..." << endl;
