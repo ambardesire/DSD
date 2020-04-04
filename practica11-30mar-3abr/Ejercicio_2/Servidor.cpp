@@ -29,21 +29,28 @@ int main(int argc, char *argv[]) {
 				idProcesada = pet->requestId;
 			break;
 			case 2:
-				idProcesada++;
-				cout << "Operacion escritura" << endl;
+				cout << "\nDeposito recibido" << endl;
+				cout << "\tTipo: " << pet->messageType << endl;
+				cout << "\tId: " << pet->requestId << endl;
+				cout << "\tOperacion: " << pet->operationId << endl;
+
 				int nbdCliente;
 				memcpy(&nbdCliente,(unsigned int *)pet->arguments, sizeof(unsigned int));
-				if(pet->requestId==idProcesada){}
+				if(pet->requestId==idProcesada+1){
+					idProcesada++;
 					nbd += nbdCliente;
 					aux = nbd;
-				}else if (pet->requestId>idProcesada) {
+					cout << "\tSaldo actual: " << nbd << endl;
+				} else if (pet->requestId>idProcesada) {
 					aux = idProcesada*-1;
-					cout << "Se perdieron datos, reenviar peticiones" << endl;
-				} else if (pet->requestId<idProcesada) {
-					cout << "Mensaje duplicado, accion ignorada" << endl;
+					cout << "\tSaldo actual: " << nbd << endl;
+					cout << "\tSe perdieron datos, reenviar peticiones" << endl;
+				} else if (pet->requestId<=idProcesada) {
+					cout << "\tMensaje duplicado, accion ignorada" << endl;
 				}
+				pet->messageType = 1;
 				memcpy((unsigned int *)pet->arguments, &aux, sizeof(unsigned int));
-				cout << "nuevo saldo enviado" << endl;
+				cout << "\tnuevo saldo enviado" << endl;
 			break;
 		}
 
