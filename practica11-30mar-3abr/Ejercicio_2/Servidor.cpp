@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	Respuesta srv(puerto);
-	unsigned int nbd = 0;
+	unsigned int nbd = 0, aux;
 	unsigned int idProcesada = 0;
 	cout << "Escuchando..." << endl;
 	while(1) {
@@ -33,14 +33,20 @@ int main(int argc, char *argv[]) {
 				cout << "Operacion escritura" << endl;
 				int nbdCliente;
 				memcpy(&nbdCliente,(unsigned int *)pet->arguments, sizeof(unsigned int));
-				if(idProcesada == pet->requestId)
+				if(pet->requestId==idProcesada){}
 					nbd += nbdCliente;
-				else
+					aux = nbd;
+				}else if (pet->requestId>idProcesada) {
+					aux = idProcesada*-1;
+					cout << "Se perdieron datos, reenviar peticiones" << endl;
+				} else if (pet->requestId<idProcesada) {
 					cout << "Mensaje duplicado, accion ignorada" << endl;
-				memcpy((unsigned int *)pet->arguments, &nbd, sizeof(unsigned int));
+				}
+				memcpy((unsigned int *)pet->arguments, &aux, sizeof(unsigned int));
 				cout << "nuevo saldo enviado" << endl;
 			break;
 		}
+
 		srv.sendReply(pet);
 	}
 }
