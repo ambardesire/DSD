@@ -71,7 +71,7 @@ char* Solicitud::doOperation(char *IP, int puerto, int operationId, char *argume
                 cout << "\tId: " << ((struct Mensaje*)p1.obtieneDatos())->requestId << endl;
                 cout << "\tOperacion: " << ((struct Mensaje*)p1.obtieneDatos())->operationId << endl;
                 cout << "\tSaldo: " << *(unsigned int*)((struct Mensaje*)p1.obtieneDatos())->arguments << endl;
-                break;
+                return p1.obtieneDatos();
             } else
                 nEnviado1++;
         } while (nEnviado1 < 7);
