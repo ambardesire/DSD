@@ -67,10 +67,10 @@ char* Solicitud::doOperation(char *IP, int puerto, int operationId, char *argume
                 }
             }
             if(enviado1 != -1) {
-                cout << "\tTipo: " << ((struct Mensaje*)p1.obtieneDatos())->messageType << endl;
-                cout << "\tId: " << ((struct Mensaje*)p1.obtieneDatos())->requestId << endl;
-                cout << "\tOperacion: " << ((struct Mensaje*)p1.obtieneDatos())->operationId << endl;
-                cout << "\tSaldo: " << *(unsigned int*)((struct Mensaje*)p1.obtieneDatos())->arguments << endl;
+                //cout << "\tTipo: " << ((struct Mensaje*)p1.obtieneDatos())->messageType << endl;
+                //cout << "\tId: " << ((struct Mensaje*)p1.obtieneDatos())->requestId << endl;
+                //cout << "\tOperacion: " << ((struct Mensaje*)p1.obtieneDatos())->operationId << endl;
+                //cout << "\tSaldo: " << *(unsigned int*)((struct Mensaje*)p1.obtieneDatos())->arguments << endl;
                 return p1.obtieneDatos();
             } else
                 nEnviado1++;
