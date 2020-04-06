@@ -20,7 +20,7 @@ int SocketDatagrama::recibe(PaqueteDatagrama &p) {
 	int res = recvfrom(s, (char *)p.obtieneDatos(), p.obtieneLongitud(), 0,(struct sockaddr *)&direccionForanea, &clilen);
 	p.inicializaPuerto(htons(direccionForanea.sin_port));
 	p.inicializaIp(inet_ntoa(direccionForanea.sin_addr));
-	printf("%s: %d \n",p.obtieneDireccion(),p.obtienePuerto());
+	// printf("%s: %d \n",p.obtieneDireccion(),p.obtienePuerto());
 	return res;
 }
 
@@ -42,7 +42,7 @@ int SocketDatagrama::recibeTimeout(PaqueteDatagrama & p, time_t segundos, suseco
 	}
 	p.inicializaPuerto(htons(direccionForanea.sin_port));
 	p.inicializaIp(inet_ntoa(direccionForanea.sin_addr));
-	printf("%s: %d \n",p.obtieneDireccion(),p.obtienePuerto());
+	// printf("%s: %d \n",p.obtieneDireccion(),p.obtienePuerto());
 	return res;
 }
 

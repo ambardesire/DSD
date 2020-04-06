@@ -5,6 +5,8 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 	int puerto = 0;
+	struct Mensaje *pet, *hist;
+	hist = new struct Mensaje; 
 
 	if(argc == 2) {
 		puerto = atoi(argv[1]);
@@ -15,38 +17,55 @@ int main(int argc, char *argv[]) {
 	}
 
 	Respuesta srv(puerto);
-	unsigned int nbd = 0, aux;
+	unsigned int nbd = 0;
 	unsigned int idProcesada = 0;
 	cout << "Escuchando..." << endl;
+
 	while(1) {
-		struct Mensaje *pet = srv.getRequest();
-		
-		switch(pet->operationId) {
-			case 1:
-				cout << "Operacion Lectura" << endl;
-				memcpy((unsigned int *)pet->arguments, &nbd, sizeof(unsigned int));
-				cout << "nbd enviado" << endl;
-				idProcesada = pet->requestId;
-			break;
-			case 2:
+		pet = srv.getRequest();
+
+		if (pet->operationId==1) {
+			cout << "\nInicializar nbd" << endl;
+			nbd = 0,
+			memcpy(hist, pet, sizeof(struct Mensaje));
+			memcpy((unsigned int *)pet->arguments, &nbd, sizeof(unsigned int));
+			cout << "nbd enviado, base inicializada." << endl;
+			idProcesada = pet->requestId;
+		} else if (pet->operationId==2) {
+			cout << "\nDeposito recibido" << endl;
+			cout << "\tTipo: " << pet->messageType << endl;
+			cout << "\tId: " << pet->requestId << endl;
+			cout << "\tOperacion: " << pet->operationId << endl;
+
+			int nbdCliente;
+			memcpy(&nbdCliente,(unsigned int *)pet->arguments, sizeof(unsigned int));
+			
+			if(pet->requestId==idProcesada+1){
 				idProcesada++;
-				cout << "Operacion escritura" << endl;
-				int nbdCliente;
-				memcpy(&nbdCliente,(unsigned int *)pet->arguments, sizeof(unsigned int));
-				if(pet->requestId==idProcesada){}
-					nbd += nbdCliente;
-					aux = nbd;
-				}else if (pet->requestId>idProcesada) {
-					aux = idProcesada*-1;
-					cout << "Se perdieron datos, reenviar peticiones" << endl;
-				} else if (pet->requestId<idProcesada) {
-					cout << "Mensaje duplicado, accion ignorada" << endl;
-				}
-				memcpy((unsigned int *)pet->arguments, &aux, sizeof(unsigned int));
-				cout << "nuevo saldo enviado" << endl;
-			break;
+				nbd += nbdCliente;
+				cout << "\tSaldo actual: " << nbd << endl;
+				memcpy((unsigned int *)pet->arguments, &nbd, sizeof(unsigned int));
+			} else if (pet->requestId<=idProcesada) {
+				cout << "\tMensaje duplicado, accion ignorada" << endl;
+				continue;
+			}
+
+			memcpy(hist, pet, sizeof(struct Mensaje));
+			cout << "\tnuevo saldo enviado" << endl;
+		} else if (pet->operationId==3) {
+			cout << "\nSolicitud de ultimo deposito" << endl;
+			cout << "\tTipo: " << pet->messageType << endl;
+			cout << "\tId: " << pet->requestId << endl;
+			cout << "\tOperacion: " << pet->operationId << endl;
+
+			idProcesada = pet->requestId;
+			memcpy(pet, hist, sizeof(struct Mensaje));
+
+			cout << "\tnuevo saldo enviado " << *(unsigned int*)hist->arguments << endl;
 		}
 
+		pet->messageType=1;
+		
 		srv.sendReply(pet);
 	}
 }
