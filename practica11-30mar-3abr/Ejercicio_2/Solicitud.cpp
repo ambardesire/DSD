@@ -49,34 +49,6 @@ char* Solicitud::doOperation(char *IP, int puerto, int operationId, char *argume
     } while (nEnviado < 7);
 
     if(nEnviado == 7) {
-        // cout << "Se han agotado el numero posible de intentos" << endl;
-        cout << "Solicitando ultimo deposito...\n";
-        men.operationId = 3;
-        PaqueteDatagrama p1((char *)&men,sizeof(men),IP,puerto);
-
-        cout << "\tTipo: " << ((struct Mensaje*)p1.obtieneDatos())->messageType << endl;
-        cout << "\tId: " << ((struct Mensaje*)p1.obtieneDatos())->requestId << endl;
-        cout << "\tOperacion: " << ((struct Mensaje*)p1.obtieneDatos())->operationId << endl;
-
-        do {
-            socketlocal->envia(p1);
-            while(true) {
-                enviado1 = socketlocal->recibeTimeout(p1,segundos,microsegundos);
-                if(1 == ((struct Mensaje *)p1.obtieneDatos())->messageType) {
-                    break;
-                }
-            }
-            if(enviado1 != -1) {
-                //cout << "\tTipo: " << ((struct Mensaje*)p1.obtieneDatos())->messageType << endl;
-                //cout << "\tId: " << ((struct Mensaje*)p1.obtieneDatos())->requestId << endl;
-                //cout << "\tOperacion: " << ((struct Mensaje*)p1.obtieneDatos())->operationId << endl;
-                //cout << "\tSaldo: " << *(unsigned int*)((struct Mensaje*)p1.obtieneDatos())->arguments << endl;
-                return p1.obtieneDatos();
-            } else
-                nEnviado1++;
-        } while (nEnviado1 < 7);
-    }
-    if (nEnviado1==7) {
         cout << "Se han agotado el numero posible de intentos" << endl;
         exit(-1);
     }
