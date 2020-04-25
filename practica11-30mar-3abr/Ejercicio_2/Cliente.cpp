@@ -40,7 +40,6 @@ int main(int argc, char *argv[]) {
 		resp = (struct Mensaje *)cl.doOperation(ip , puerto, 2, (char *)&pesos, i + 1);
 		memcpy(&nbdServidor,(unsigned int *)resp->arguments, sizeof(unsigned int));
 
-		cout << "En peticion " << resp->requestId << ", BD => Local(" << nbdLocal << ") vs (" << nbdServidor << ")" << endl;
 		cout << "Deposito recibido" << endl;
 		cout << "\tTipo: " << resp->messageType << endl;
 		cout << "\tId: " << resp->requestId << endl;
@@ -51,7 +50,6 @@ int main(int argc, char *argv[]) {
 		if(nbdLocal != nbdServidor) {
 			cout << "Inconsistencia de BD" << endl;
 			cout << "En peticion " << resp->requestId << ", BD => Local(" << nbdLocal << ") vs (" << nbdServidor << ")" << endl;
-			// if (resp->requestId<)
 			exit(-3);
 		}
 	}
