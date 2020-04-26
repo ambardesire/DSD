@@ -15,6 +15,7 @@ class SocketMulticast{
 
 public:
     SocketMulticast(int = 0);
+    SocketMulticast(int puerto, unsigned char TTL);
     ~SocketMulticast();
     int recibe(PaqueteDatagrama & p);
     int envia(PaqueteDatagrama & p, unsigned char ttl);

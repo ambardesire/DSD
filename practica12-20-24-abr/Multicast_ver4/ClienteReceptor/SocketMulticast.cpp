@@ -15,7 +15,7 @@ SocketMulticast::SocketMulticast(int puerto, unsigned char TTL){
 }
 
 SocketMulticast::~SocketMulticast(){
-    close(s);
+    // close(s);
 }
 
 int SocketMulticast::recibe(PaqueteDatagrama & p){
@@ -51,14 +51,14 @@ void SocketMulticast::unirseGrupo(char * ipMulticast){
 	struct ip_mreq multicast;
 	multicast.imr_multiaddr.s_addr = inet_addr(ipMulticast);
 	multicast.imr_interface.s_addr = htonl(INADDR_ANY);
-	setsockopt(s, IPPROTO_IP, IP_ADD_MEMBERSHIP, (void *) &multicast, sizeof(multicast))
+	setsockopt(s, IPPROTO_IP, IP_ADD_MEMBERSHIP, (void *) &multicast, sizeof(multicast));
 }
 
 void SocketMulticast::salirseGrupo(char * ipMulticast){
 	struct ip_mreq multicast;
 	multicast.imr_multiaddr.s_addr = inet_addr(ipMulticast);
 	multicast.imr_interface.s_addr = htonl(INADDR_ANY);
-	setsockopt(s, IPPROTO_IP, IP_DROP_MEMBERSHIP, (void *) &multicast, sizeof(multicast))
+	setsockopt(s, IPPROTO_IP, IP_DROP_MEMBERSHIP, (void *) &multicast, sizeof(multicast));
 }
 
 

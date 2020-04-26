@@ -13,39 +13,30 @@ SocketMulticast::SocketMulticast(unsigned int port) {
     multicast = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
     unicast = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
 
-
     int reuse = 1;
     if (setsockopt(multicast, SOL_SOCKET, SO_REUSEPORT, &reuse, sizeof(reuse)) == -1) {
         printf("Error al llamar a la función setsockopt\n");
         exit(0);
     }
-
     if (setsockopt(unicast, SOL_SOCKET, SO_REUSEPORT, &reuse, sizeof(reuse)) == -1) {
         printf("Error al llamar a la función setsockopt\n");
         exit(0);
     }
-
     if (setsockopt(multicast, SOL_SOCKET, SO_REUSEADDR, (char*) &reuse, sizeof(reuse)) < 0) {
         perror("Reusing ADDR failed");
         exit(0);
     }
-
     if (setsockopt(unicast, SOL_SOCKET, SO_REUSEADDR, (char*) &reuse, sizeof(reuse)) < 0) {
         perror("Reusing ADDR failed");
         exit(0);
     }
-
     if (port) {
         bzero((char *) &direccionLocal, sizeof(direccionLocal));
-
         direccionLocal.sin_family = AF_INET;
         direccionLocal.sin_addr.s_addr = htonl(INADDR_ANY);
         direccionLocal.sin_port = htons(port);
-
         bind(multicast, (struct sockaddr *) &direccionLocal, sizeof(direccionLocal));
     }
-
-
     FD_ZERO(&fds);
     FD_SET(unicast, &fds);
     FD_SET(multicast, &fds);
@@ -70,55 +61,40 @@ std::vector<PaqueteDatagrama> SocketMulticast::recibe() {
         int ret;
         while ((ret = select(multicast+1, &fds, nullptr, nullptr, &tv)) > 0) {
             int longitud = recvfrom(multicast, buffer, MAX_BUFFER_SIZE, 0, (struct sockaddr *)&direccionForanea, &lData);
-
             resp.inicializaDatos(buffer, longitud);
             resp.inicializaIP(inet_ntoa(direccionForanea.sin_addr));
             resp.puerto = ntohs(direccionForanea.sin_port);
-
             vector.push_back(resp);
         }
-
         if(ret < 0) {
             std::cout << "Error recibe(): select()" << std::endl;
         }
 
-
     } else {
         select(multicast+1, &fds, nullptr, nullptr, nullptr);
         int longitud = recvfrom(multicast, buffer, MAX_BUFFER_SIZE, 0, (struct sockaddr *)&direccionForanea, &lData);
-
         //std::cout << "recibido : " << longitud << " emisor: " << emisor << std::endl;
-
-
         resp.inicializaDatos(buffer, longitud);
         resp.inicializaIP(inet_ntoa(direccionForanea.sin_addr));
         resp.puerto = ntohs(direccionForanea.sin_port);
-
         vector.push_back(resp);
     }
-
-
     delete[] buffer;
-
     return vector;
 }
 
 int SocketMulticast::envia(PaqueteDatagrama &p, unsigned char TTL) {
     int enviado;
-
     if (emisor) {
         setsockopt(multicast, IPPROTO_IP, IP_MULTICAST_TTL, &TTL, sizeof(TTL));
     }
-
     direccionForanea.sin_family = AF_INET;
     direccionForanea.sin_addr.s_addr = inet_addr(p.obtieneDireccion());
     direccionForanea.sin_port = htons(p.puerto);
 
     unsigned int lData = sizeof(direccionForanea);
     enviado = sendto(emisor ? multicast : unicast, p.obtieneDatos(), p.longitud, 0, (struct sockaddr *)&direccionForanea, lData);
-
     //std::cout << "enviado : " << enviado << ", longitud: " << p.longitud << " emisor: " << emisor << std::endl;
-
     return enviado;
 }
 
