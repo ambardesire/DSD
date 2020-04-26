@@ -6,17 +6,37 @@
 using namespace std;
 
 
-static const char * GROUP = "127.0.0.1";
+// static const char * GROUP = "127.0.0.1";
 
 
 int main(int argc, char **argv) {
+
+
+	char *ipm;
+    int puerto = 0;
+    unsigned char ttl;
+    char * arr;
+
+	if(argc == 5) {
+		ipm = argv[1];
+		puerto = atoi(argv[2]);
+		ttl = atoi(argv[3]);
+        ipm = argv[4];
+	} else {
+		cout << "Ingrese el comando de forma correcta" << endl;
+		cout << "\t ./emisor <IP Multicast> <puerto> <TTL> <cadena>";
+		exit(-2);
+	}
+
+
+
     SocketMulticast multicast(0); // Puerto para envio multicast
 
-    int arr[2] = {2,7};
+    // int arr[2] = {2,7};
 
-    PaqueteDatagrama paquete(arr, sizeof(arr), GROUP, 7272);
+    PaqueteDatagrama paquete(arr, sizeof(arr), ipm, puerto);
 
-    multicast.envia(paquete, 7);
+    multicast.envia(paquete, ttl);
     
     cout << arr[0] << ", " << arr[1] << endl;
 

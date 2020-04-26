@@ -5,14 +5,27 @@
 
 using namespace std;
 
-static const char * group = "127.0.0.1";
+// static const char * group = "127.0.0.1";
 
 // static int nbd = 0;
 
-int main() {
-    SocketMulticast multicast(7272); // Puerto multicast a la escucha en 7272
+int main(int argc, char **argv) {
 
-    multicast.unirseGrupo(group);
+    char *ipm;
+    int puerto = 0;
+
+	if(argc == 2) {
+		ipm = argv[1];
+		puerto = atoi(argv[2]);
+	} else {
+		cout << "Ingrese el comando de forma correcta" << endl;
+		cout << "\t ./emisor <IP Multicast> <puerto>";
+		exit(-2);
+	}
+
+    SocketMulticast multicast(puerto); // Puerto multicast a la escucha en 7272
+
+    multicast.unirseGrupo(ipm);
 
     while (true) {
         auto vec = multicast.recibe();
