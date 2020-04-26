@@ -1,8 +1,4 @@
-//
-// Created by quetzalfir on 05/11/19.
-//
-
-#include "SocketMulticast.hpp"
+#include "SocketMulticast.h"
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <cstring>
@@ -10,7 +6,6 @@
 #include <iostream>
 
 static const size_t MAX_BUFFER_SIZE = sizeof(Mensaje);
-
 
 SocketMulticast::SocketMulticast(unsigned int port) {
     emisor = !port;
@@ -127,69 +122,69 @@ int SocketMulticast::envia(PaqueteDatagrama &p, unsigned char TTL) {
     return enviado;
 }
 
-int SocketMulticast::enviaConfiable(PaqueteDatagrama &p, unsigned char TTL, int num_receptores) {
-    //init header
-    memcpy(mensaje.arguments, p.obtieneDatos(), p.longitud);
-    mensaje.size = p.longitud;
+// int SocketMulticast::enviaConfiable(PaqueteDatagrama &p, unsigned char TTL, int num_receptores) {
+//     //init header
+//     memcpy(mensaje.arguments, p.obtieneDatos(), p.longitud);
+//     mensaje.size = p.longitud;
 
-    PaqueteDatagrama aux(&mensaje, sizeof(Mensaje), p.obtieneDireccion(), p.puerto);
+//     PaqueteDatagrama aux(&mensaje, sizeof(Mensaje), p.obtieneDireccion(), p.puerto);
 
-    envia(aux, TTL);
+//     envia(aux, TTL);
 
 
-    auto vec = recibe();
+//     auto vec = recibe();
 
-    if (vec.size() != num_receptores) {
-        std::cout << "Error: algun mensaje se perdio" << std::endl;
-        return -1;
-    }
+//     if (vec.size() != num_receptores) {
+//         std::cout << "Error: algun mensaje se perdio" << std::endl;
+//         return -1;
+//     }
 
-    for (auto & ack : vec) {
-        unsigned int ack_id = *(unsigned int *)ack.obtieneDatos();
+//     for (auto & ack : vec) {
+//         unsigned int ack_id = *(unsigned int *)ack.obtieneDatos();
 
-        if (ack_id != mensaje.requestId + 1) {
-            std::cout << "Error: mensaje no recibido, " << ack.obtieneDireccion() << std::endl;
+//         if (ack_id != mensaje.requestId + 1) {
+//             std::cout << "Error: mensaje no recibido, " << ack.obtieneDireccion() << std::endl;
 
-            return -1;
-        }
-    }
+//             return -1;
+//         }
+//     }
 
-    mensaje.requestId++;
+//     mensaje.requestId++;
 
-    return 0;
-}
+//     return 0;
+// }
 
-int SocketMulticast::recibeConfiable(PaqueteDatagrama &p) {
-    //recibe(p);
+// int SocketMulticast::recibeConfiable(PaqueteDatagrama &p) {
+//     //recibe(p);
 
-    Mensaje aux{};
-    memcpy(&aux, p.obtieneDatos(), sizeof(Mensaje));
+//     Mensaje aux{};
+//     memcpy(&aux, p.obtieneDatos(), sizeof(Mensaje));
 
-    if (aux.requestId != mensaje.requestId) {
-        return -1;
-    }
+//     if (aux.requestId != mensaje.requestId) {
+//         return -1;
+//     }
 
-    mensaje.requestId++;
+//     mensaje.requestId++;
 
-    PaqueteDatagrama resp(&mensaje.requestId, sizeof(mensaje.requestId), p.obtieneDireccion(), p.puerto);
-    envia(resp, 0);
+//     PaqueteDatagrama resp(&mensaje.requestId, sizeof(mensaje.requestId), p.obtieneDireccion(), p.puerto);
+//     envia(resp, 0);
 
-    p.inicializaDatos(aux.arguments, aux.size);
+//     p.inicializaDatos(aux.arguments, aux.size);
 
-    return 0;
-}
+//     return 0;
+// }
 
-/*int SocketMulticast::recibeTimeout(PaqueteDatagrama &p, time_t segundos, suseconds_t microsegundos) {
+int SocketMulticast::recibeTimeout(PaqueteDatagrama &p, time_t segundos, suseconds_t microsegundos) {
     int respuesta;
 
     struct timeval timeout{};
     timeout.tv_sec = segundos;
     timeout.tv_usec = microsegundos;
 
-    setsockopt(s, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
+    setsockopt(multicast, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
 
     unsigned int lData = sizeof(direccionForanea);
-    respuesta = recvfrom(s, p.obtieneDatos(), p.longitud, 0, (struct sockaddr *)&direccionForanea, &lData);
+    respuesta = recvfrom(multicast, p.obtieneDatos(), p.longitud, 0, (struct sockaddr *)&direccionForanea, &lData);
 
     if (respuesta < 0) {
         if (errno == EWOULDBLOCK) {
@@ -208,7 +203,7 @@ int SocketMulticast::recibeConfiable(PaqueteDatagrama &p) {
     p.puerto = ntohs(direccionForanea.sin_port);
 
     return respuesta;
-}*/
+}
 
 void SocketMulticast::unirseGrupo(const char * multicastIP) {
     struct ip_mreq multicast_str{};

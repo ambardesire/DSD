@@ -1,7 +1,3 @@
-//
-// Created by quetzalfir on 02/10/19.
-//
-
 #ifndef SERVER2_MENSAJE_H
 #define SERVER2_MENSAJE_H
 
@@ -20,4 +16,4 @@ struct Mensaje {
     char arguments[TAM_MAX_DATA];
 };
 
-#endif //SERVER2_MENSAJE_H
+#endif

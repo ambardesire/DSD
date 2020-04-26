@@ -1,13 +1,8 @@
-//
-// Created by quetzalfir on 05/11/19.
-//
-
-#ifndef PROYECTO_3_SOCKETMULTICAST_HPP
-#define PROYECTO_3_SOCKETMULTICAST_HPP
-
+#ifndef PR12_SOCKETMULTICAST
+#define PR12_SOCKETMULTICAST
 
 #include <vector>
-#include "PaqueteDatagrama.hpp"
+#include "PaqueteDatagrama.h"
 #include "mensaje.h"
 
 class SocketMulticast{
@@ -16,14 +11,14 @@ public:
     ~SocketMulticast();
 
     std::vector<PaqueteDatagrama> recibe();
-    int recibeConfiable(PaqueteDatagrama & p);
+    // int recibeConfiable(PaqueteDatagrama & p);
 
     int envia(PaqueteDatagrama & p, unsigned char ttl);
-    int enviaConfiable(PaqueteDatagrama & p, unsigned char ttl, int num_receptores);
+    // int enviaConfiable(PaqueteDatagrama & p, unsigned char ttl, int num_receptores);
 
-    //int recibeTimeout(PaqueteDatagrama &p, time_t segundos, suseconds_t microsegundos);
+    int recibeTimeout(PaqueteDatagrama &p, time_t segundos, suseconds_t microsegundos);
 
-        //Se une a un grupo multicast, recibe la IP multicast
+    //Se une a un grupo multicast, recibe la IP multicast
     void unirseGrupo(const char * multicastIP);
     //Se sale de un grupo multicast, recibe la IP multicast
     void salirseGrupo(const char * multicastIP);
@@ -40,4 +35,4 @@ private:
 };
 
 
-#endif //PROYECTO_3_SOCKETMULTICAST_HPP
+#endif //PR12_SOCKETMULTICAST

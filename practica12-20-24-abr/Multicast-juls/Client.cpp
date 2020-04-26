@@ -1,12 +1,12 @@
 #include <iostream>
-#include "SocketMulticast.hpp"
+#include "SocketMulticast.h"
 #include "mensaje.h"
 #include <cstring>
 
 using namespace std;
 
 
-static const char * GROUP = "224.0.0.2";
+static const char * GROUP = "127.0.0.1";
 
 
 int main(int argc, char **argv) {

@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cstring>
-#include "SocketMulticast.hpp"
+#include "SocketMulticast.h"
 #include "mensaje.h"
 
 using namespace std;
 
-static const char * group = "224.0.0.2";
+static const char * group = "127.0.0.1";
 
-static int nbd = 0;
+// static int nbd = 0;
 
 int main() {
     SocketMulticast multicast(7272); // Puerto multicast a la escucha en 7272
