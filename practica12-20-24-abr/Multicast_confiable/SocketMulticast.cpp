@@ -53,10 +53,17 @@ int SocketMulticast::recibeConfiable(PaqueteDatagrama & p){
 	if(msn_recibido.requestId == id_msn){
 		printf("Los id de mensaje empatan: %d\n", id_msn);
 
-		struct mensaje msn_ack;
-		msn_ack.
-	
+		id_msn++;
+	}
 
+	else if(msn_recibido.requestId != id_msn){
+		printf("El receptor no recibió el mensaje preevio\n");
+	
+		id_msn = msn_recibido.requestId + 1;
+	
+	}
+	
+	return n;
 
 }
 
