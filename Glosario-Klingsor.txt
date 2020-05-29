@@ -1,0 +1,321 @@
+Página	Palabra	Significado
+2	Reich	El Reich alemán (en alemán, das Deutsche Reich, literalmente «el Imperio Alemán») fue el nombre oficial del Estado alemán entre los años 1871 y 1945.
+2	Pesquisa	Investigación que se hace de una cosa para descubrir o averiguar algo, en especial la que realiza la policía.
+2	Fürher	Jurídicamente fue el cargo político en reemplazo al de Presidente del Reich de Alemania en 1933, tras la llegada de Adolf Hitler al poder el 2 de agosto de 1934
+2	ominosa	Que es abominable y merece ser condenado y aborrecido.
+8	Columbrar	Ver desde lejos una cosa sin distinguirla bien.
+8	Rellanos	Superficie horizontal y plana, mayor que el escalón, en que termina cada tramo de una escalera
+8	Belfos	de la persona que tiene el labio inferior más grueso que el superior.
+8	Vicaria	Planta herbácea tropical que mide hasta 1 m de altura, de tallo muy ramificado, hojas opuestas de color verde y flores axilares grandes de coloración variable; se cultiva como planta ornamental y por sus propiedades medicinales.
+8	Gruppenführer-SS	Jefe de Grupo
+8	pérfida	[persona] Que es desleal a alguien que confía en él y muy malo.
+9	Volk	 pueblo o nación
+10	Bendlerstrasse	
+12	patíbulo	Tablado o lugar en que se ejecuta la pena de muerte.
+13	anodina	Que es insustancial o que carece de interés o importancia.
+13	parquedad	Escasez de algo
+13	coup de théâtre	una acción o giro sensacionalista o dramáticamente repentino de eventos, especialmente en una obra de teatro.
+14	sinuosas	Que es poco claro y pretende ocultar la verdadera intención o propósito de sus acciones, objetivos o manifestaciones.
+15	esbirros	Hombre que, a cambio de dinero, realiza las acciones violentas o amenazas que se le ordenan.
+16	chaqué	Traje masculino de etiqueta compuesto de un saco, generalmente gris o negro, que a partir de la cintura se va estrechando hacia atrás formando dos faldones y se abrocha con un solo botón, que se combina con un pantalón de franela gris liso o a rayas; suele llevarse con un chaleco cruzado, camisa blanca, corbata sujeta con una aguja y sombrero de copa.
+20	tautológica	 es una fórmula bien formada que resulta verdadera para cualquier interpretación
+21	aletargar	Disminuir [algo] en su actividad de forma lenta y progresiva hasta casi cesar por completo.
+21	corolario	Razonamiento, juicio o hecho que es consecuencia lógica de lo demostrado o sucedido anteriormente.
+22	perogrullada	Afirmación que resulta superflua o simple por encerrar una verdad muy evidente.
+29	insaculación	Poner en una bolsa, una urna u otro recipiente las papeletas o bolas de un sorteo antes de proceder a extraerlas.
+34	capellán	Sacerdote encargado del servicio religioso de una iglesia no parroquial, como una comunidad religiosa, un hospital, etc.
+34	otrora	En un tiempo pasado indeterminado que queda lejano del momento del cual se habla; generalmente contrapone la situación descrita con otra situación anterior.
+34	rollizo	Que está grueso y fuerte y tiene un aspecto saludable.
+36	exangües	Que está agotado y completamente falto de fuerzas.
+39	execrables	Que merece ser condenado o criticado con severidad.
+40	rubicundo	Que es de color rubio que tira a rojo.
+45	armisticio	Acuerdo que firman dos o más países en guerra cuando deciden dejar de combatir durante cierto tiempo con el fin de discutir una posible paz.
+45	fatuos	Que se muestra engreído en su actitud, comportamiento o manera de hablar.
+48	sórdida	Que es miserable o sucio.
+50	palaciegas	Del palacio o relacionado con él.
+50	enroques	En el juego del ajedrez, jugada en la que se mueven simultáneamente el rey, que se desplaza dos escaques hacia un lado, y la torre, que salta por encima del rey y se coloca junto a él.
+51	pírrica	Danza marcial de la antigua Grecia en que se imitaba un combate.
+53	pergeñar	Hacer el esbozo o idea previa de un trabajo o una acción, generalmente de manera rápida y con mayor o menor habilidad, o sin concederle mucha importancia.
+53	obcecado	La idea de obcecar alude a encandilar, cegar o alucinar. Alguien que está obcecado, por lo tanto, se encuentra obnubilado u ofuscado.
+53	peroratas	Discurso largo y poco oportuno que se hace con cierto apasionamiento y vehemencia.
+53	solazaba	Dar solaz o regocijo a una persona 
+54	apotegma	Frase o sentencia breve en la cual se expresa un pensamiento o enseñanza.
+56	mesarse	Arrancar el cabello o la barba con las manos, o tirar con fuerza de ellos.
+56	summa cum laude	Con la más grande distinción.
+57	entomólogo	Que se dedica al estudio científico de los insectos.
+59	novum organum	Nuevos instrumentos de la ciencia
+60	farragosas	Que es poco claro e incluye cosas o ideas superfluas y desordenadas que lo hacen confuso y pesado.
+63	palurdo	Que tiene poca educación o escasa formación cultural y no sabe comportarse con elegancia y buenos modales en público.
+69	mella	Pequeña hendidura que queda en el borde de un objeto al romperse o desportillarse, particularmente en el filo de una herramienta o un arma.
+70	eremita	Persona que vive sola en un lugar deshabitado, especialmente para dedicar su vida a la oración y al sacrificio.
+70	koan zen	es en la tradición zen, un problema que el maestro plantea al alumno para comprobar sus progresos.
+70	sufí	Que es seguidor del sufismo.
+70	aforismo talmúdico	na sentencia breve y doctrinal que se propone como regla en alguna ciencia o arte.  Libro que contiene la recopilación de la tradición oral judía acerca de la religión y las leyes (Misná) y los comentarios a la Misná (Guemará).
+72	admonitorio	Que sirve para amonestar o tiene carácter de admonición.
+72	koan	es en la tradición zen, un problema que el maestro plantea al alumno para comprobar sus progresos.
+75	candorosa	Que tiene candor o demuestra ingenuidad.
+75	infructuosa	Que no es de utilidad ni produce buenos resultados.
+75	diáconos	Clérigo católico que ha recibido la segunda de las órdenes mayores que otorga la Iglesia y que tiene entre sus funciones anunciar el Evangelio, bautizar, asistir al sacerdote en el altar, distribuir la comunión y dar testimonio cristiano ayudando a los más pobres.
+75	caniches	es una raza canina que hasta el siglo XV se consideró de uso exclusivo de los aristócratas y nobles. 
+75	pusilánimes	Que muestra poco ánimo y falta de valor para emprender acciones, enfrentarse a peligros o dificultades o soportar desgracias.
+75	mendaces	Mentiroso.
+76	esquiva	Que rehúye el trato de la gente y rechaza sus atenciones y muestras de cariño.
+76	zozobra	Sentimiento de tristeza, angustia o inquietud de quien teme algo.
+77	acomodaticias	Acomodadizo.
+78	refocilar	Recrear o alegrar a alguien [una cosa, especialmente algo que se considera grosero o malvado].
+80	zafia	Que es inculto y no tiene finura.
+81	bocajarro	Que algo se hace de improviso, sin preparación alguna.
+87	letargo	Estado de adormecimiento e inactividad en que quedan algunos animales en determinadas épocas del año en que las condiciones del medio les son desfavorables.
+92	clepsidra	Reloj que mide el tiempo basándose en lo que tarda el agua en caer de un tubo o vaso a otro.
+92	parapetado	es una conjunción en participio del verbo "parapetar", el cual representa la conducta una persona que está creando una defensa, o se prepara para defenderse por medio de parapetos o artilugios diversos
+93	ujier	Portero de un palacio o de un tribunal.
+96	lontananza	Parte más alejada de un lugar.
+97	retahila	Serie larga de sucesos o cosas no materiales, iguales o análogas, que están, suceden o se mencionan una tras otra.
+98	violáceo	Color como el de la violeta; es el séptimo color del espectro solar.
+98	naïveté 	Ingenuidad 
+98	bridge (juego)	es un juego de naipes de cuatro jugadores 
+99	ciernes	en fase de elaboración o de formación, o sin haber madurado
+100	impoluta	Que está completamente limpio o no tiene ninguna mancha.
+100	ineluctable	incapaz de ser resistido o evitado;
+102	leso	Que ha sido agraviado.
+102	espurias	Que es falso, ilegítimo o no auténtico.
+102	andanada	Conjunto de disparos que realizan los cañones o piezas de artillería de un barco al mismo tiempo.
+103	pértiga	Vara larga, especialmente la que utilizan los atletas en las pruebas de salto con pértiga para darse impulso.
+104	aporía	hace referencia a los razonamientos en los cuales surgen contradicciones o paradojas irresolubles
+104	postrimerías	En la religión católica, las cuatro últimas etapas por las que ha de pasar el ser humano: muerte, juicio, infierno o gloria.
+104	herejía	idea o conjunto de ideas religiosas contrarias a los dogmas de una doctrina religiosa que son rechazadas por las autoridades eclesiásticas, especialmente en la iglesia católica.
+106	ignorabimus	desconocemos y desconoceremos
+109	vericuetos	Camino estrecho, tortuoso, accidentado y generalmente alto por el que es difícil andar.
+113	empero	Indica que lo que se expresa contradice las conclusiones que se esperarían de lo que se ha dicho anteriormente.
+114	aspavientos	Demostración excesiva o exagerada de sensaciones o sentimientos.
+115	impertérrito	Que no se altera, perturba o muestra emoción alguna ante una impresión o estímulo externo que normalmente producen turbación, desencadenan una emoción o inducen a determinada acción.
+115	otear	Mirar hacia un lugar lejano desde una atalaya o lugar alto.
+115	contrita	 Que siente tristeza y melancolía.
+116	zafiedad	[persona] Que es inculto y no tiene finura.
+117	entelequia	Cosa, persona o situación perfecta e ideal que solo existe en la imaginación.
+118	trastabillante	Golpear involuntariamente con el pie contra un obstáculo o contra el suelo al ir caminando o corriendo, de modo que se pierde el equilibrio.
+121	asidero	Parte por donde se ase o agarra una cosa.
+122	émbolo	Pieza de una bomba o del cilindro de un motor que se mueve hacia arriba o hacia abajo impulsando un fluido o bien recibiendo el impulso de él.
+122	funestos	Que es origen de tristezas o de desgracias.
+126	alocución	Discurso, generalmente breve, que pronuncia una autoridad o que dirige un jefe o superior a sus subordinados con ocasión de un acontecimiento especial.
+126	zarzas	Arbusto sarmentoso, de tallos largos y flexibles y provistos de espinas curvadas, hojas aserradas
+126	horticultor	Persona que tiene por oficio cultivar y cuidar una huerta.
+127	despepitar	Quitar las pepitas o semillas a un fruto.
+128	atribulado	leno de tribulaciones (penas, disgustos o aflicciones); compungido, apenado, triste.
+129	meliflua	Que contiene miel o que tiene alguna de sus características.
+132	bonhomía	Cualidad de la persona que es muy buena pero algo ingenua.
+134	deus ex machina	Dios de la maquina
+134	dechado	Muestra o modelo que se tiene presente para imitar.
+135	incordiar	Causar una persona o una cosa molestias o fastidio este niño me incordia; los ruidos incordian.
+136	lirismo	Expresión profunda e íntima de sentimientos y emociones, generalmente plasmados en el arte.
+137	disquisición	Examen o explicación minuciosa, detallada y rigurosa sobre una materia, especialmente si se aparta del tema principal del que se está tratando.
+139	lamprea	Pez marino de cuerpo muy largo, cilíndrico y sin escamas
+141	adusto	Que es excesivamente rígido, áspero y desapacible en el trato.
+141	progenie	Ascendencia familiar de una persona.
+142	idílica	Que es utópico o excesivamente idealizado.
+144	bolcheviques	Los bolcheviques eran un grupo político radicalizado dentro del Partido Obrero Socialdemócrata de Rusia, dirigido desde un principio por Vladímir Ilich Uliánov,
+146	debacle	un fracaso repentino e ignominioso;
+148	espigado	Que se deja crecer hasta la completa madurez de la semilla y que toma altura.
+148	siderurgia	La siderurgia o siderometalurgia es la técnica del tratamiento del mineral de hierro para obtener diferentes tipos de este o de sus aleaciones tales como el acero
+148	férrea	Que es de hierro o tiene alguna de sus características.
+149	críptico	Que no es comprensible para la mayoría de las personas porque está hecho para ser entendido por unos pocos.
+152	abstrusos	Que es de difícil comprensión.
+153	luterana	El luteranismo es una de las principales ramas del cristianismo
+153	tomista	De santo Tomás de Aquino o relacionado con este filósofo y teólogo.
+154	escolástica	Movimiento filosófico y teológico que intentó utilizar la razón, en particular la filosofía de Aristóteles, para comprender el contenido sobrenatural de la revelación cristiana.
+155	insuflar	Introducir, soplando o mediante inyección, un gas o una sustancia pulverizada dentro de algo.
+159	levita(prenda)	La levita ? es una prenda masculina que cubre el cuerpo hasta casi la rodilla
+162	azorado	Es un termino de uso anticuado, que hace alusión como inquieto, preocupado, alarmado, travieso, intranquilo, desasosegado y turbado
+162	itinerante	Que va de un lugar a otro sin permanecer mucho tiempo fijo en un mismo lugar.
+168	nimios	Que tiene muy poca o ninguna importancia.
+168	habilitationschrift	habilitaciones
+170	prohijado	Tomar a una persona como hijo dado que no podían tener hijos
+171	arengas	Discurso en tono solemne y elevado que se pronuncia para enardecer o levantar los ánimos; especialmente el de carácter militar o político.
+172	algarabía	ruido producido por voces alegres y festivas
+172	otrora	En un tiempo pasado indeterminado que queda lejano del momento del cual se habla; generalmente contrapone la situación descrita con otra situación anterior.
+173	parafernalia	Conjunto de instrumentos o aparatos que se necesitan para un fin determinado.
+179	D-day	el día (6 de junio de 1944) en la Segunda Guerra Mundial en que las fuerzas aliadas invadieron el norte de Francia mediante desembarcos en la playa en Normandía; el día en que debe comenzar una operación importante o surtirá efecto un cambio.
+180	estrábico	Trastorno en el que los ojos no miran exactamente en la misma dirección al mismo tiempo.
+182	impávido	Que hace frente a una situación de peligro o riesgo sin dejarse dominar por el miedo o la angustia.
+184	querellas	Oposición o falta de armonía entre dos o más personas.
+187	trémula	Tembloroso.
+189	conmiseración	Sentimiento de pena y dolor por la desgracia o sufrimiento de alguien.
+190	falaz	Que esconde una falacia.
+192	acuciosidad	Calidad de acucioso, diligente, solícito.
+196	lúdica	Del juego o relacionado con esta actividad.
+198	resquicio	Abertura estrecha y alargada que queda entre el quicio y la puerta cuando esta no está cerrada del todo o cierra mal.
+201	vorágine	Remolino de gran fuerza e intensidad que se forma en el mar u otra extensión de agua por la acción del viento o las corrientes.
+207	ríspida	Que es difícil o costoso de realizar o soportar, por su dureza o violencia, porque requiere mucho esfuerzo o porque causa padecimiento.
+208	azuzar	Estimular la realización de determinada cosa, o a una persona para que haga algo.
+208	brío	vigor o vivacidad de estilo o desempeño.
+209	paladear	Apreciar con detenimiento el sabor de un alimento o una bebida, especialmente cuando agrada o se disfruta.
+211	bastión	es un reducto fortificado que se proyecta hacia el exterior del cuerpo principal de una fortaleza
+212	demiurgo	En la filosofía platónica y gnóstica, artífice o alma universal que es principio ordenador de los elementos preexistentes.
+216	erudición	Conocimiento profundo de alguna materia (en especial, relacionada con las humanidades) adquirido mediante el estudio directo de textos y fuentes.
+216	trovador	Poeta provenzal que en la Edad Media componía y recitaba poemas.
+218	desvencijado	Hacer que una cosa pierda su firmeza o cohesión separando las partes que la forman.
+222	precepto	Orden o mandato impuesto o establecido por una autoridad.
+224	enfebrecido	Que está muy exaltado de entusiasmo.
+225	torva	Remolino de lluvia o nieve.
+225	paliar	Disminuir o hacer más soportable algo negativo, en especial un daño físico o moral.
+226	asceta	Persona que pretende conseguir la perfección moral y espiritual a través del ascetismo.
+226	abyecto	Que comete actos despreciables o viles.
+230	tirios	Relativo a Tiro, antigua ciudad de Fenicia, o a sus habitantes.
+232	subvencionar	Conceder una subvención.
+233	sucinto	Que está expresado de manera breve, concisa y precisa.
+233	positrón	Partícula que tiene igual masa eléctrica que el electrón e igual carga eléctrica, pero positiva.
+235	transigir	Admitir o aceptar una persona la opinión o las ideas de otra en contra de las suyas propias, a fin de llegar a un acuerdo.
+235	carámbanos	Trozo de hielo largo y acabado en punta que se forma cuando se congela el agua que cae de un lugar alto.
+235	aleros	Parte inferior del tejado, que sobresale de la pared y sirve para desviar de ella el agua de lluvia.
+236	enjutas	Cada uno de los triángulos que deja en un cuadrado el círculo inscrito en él.
+237	contrahecho	Que está torcido o deformado.
+237	azaroso	Que tiene abundantes percances, riesgos, contratiempos o dificultades.
+238	inexorable	imposible de parar
+239	aya	Persona que en una casa acomodada se encargaba del cuidado y educación de los niños.
+240	galimatías	Lenguaje difícil de comprender por la impropiedad de las frases o por la confusión de las ideas.
+243	lívido	Que está muy pálido o es muy pálido.
+247	raído	Que está muy gastado o estropeado por el uso, aunque sin llegar a romperse.
+249	igneo	Que es de fuego o tiene alguna de sus características, como el color.
+249	desparpajo	Facilidad o falta de timidez para hablar, obrar o desenvolverse en un determinado ambiente o situación.
+251	boutade	un estallido o brote repentino
+254	excrecencia	Abultamiento anormal que crece en la piel de un animal o en la superficie de un vegetal.
+255	harén	Parte de la casa musulmana en donde viven las mujeres.
+263	exacerbar	Provocar gran irritación o enfado.
+267	dogmatismo	Actitud de la persona que no admite que se discutan sus afirmaciones, opiniones o ideas.
+270	mastín	Perro de gran tamaño, cuerpo robusto y fuerte
+272	chauvinismo	es la creencia narcisista de que lo propio del país o región al que uno pertenece es mejor o superior en cualquier aspecto, denigrando al resto.
+272	pleitesía	Muestra reverente de acatamiento de algo o sumisión a alguien.
+274	exultantes	Que exulta o muestra alegría u otro sentimiento con gran excitación.
+274	estirpe	Ascendencia ilustre de una persona.
+276	heliocentrismo	Teoría científica que consideraba el Sol como centro alrededor del cual giraba todo el universo.
+276	eppur si muove	y aun así se mueve
+281	ardid	Acción hábil con que se pretende engañar a alguien o conseguir algo.
+289	parvulario	Centro educativo o escuela donde se prepara a los niños para la enseñanza primaria.
+290	estoicismo	Escuela filosófica griega y grecorromana fundada por Zenón de Citio en el siglo IV a. C.
+293	cum laude	con distincion
+296	zalamera	Que demuestra cariño de una forma exagerada y a veces empalagosa, generalmente para conseguir algo.
+300	agreste	Que es abrupto o está lleno de maleza por falta de cultivo.
+301	voyeur	una persona que obtiene placer sexual al observar a otros cuando están desnudos o participan en actividades sexuales.
+304	afable	Que es agradable, apacible y cordial en el trato.
+305	eufemismo	Palabra o expresión más suave o decorosa con que se sustituye otra considerada tabú, de mal gusto, grosera o demasiado franca.
+307	pragmática	Parte de la lingüística que estudia el lenguaje en su relación con los usuarios y las circunstancias de la comunicación.
+311	promontorios	Plevación del terreno o monte de poca altura.
+311	gañidos	aullar del perro u otros animales al ser maltratados
+311	zozobrante	que peligra una embarcación por la fuerza de los vientos y el mar.
+312	morosas	 Que se retrasa en el pago de una deuda o en la devolución de una cosa.
+312	empíreo	El Empíreo es en la teología católica medieval el más alto de los cielos. 
+322	periplo	Viaje largo por numerosos países.
+322	imbuido	Infundir, inculcar a alguien ideas o sentimientos: su padre le imbuyó la pasión por el cine.
+322	fin-de-siècle	fin de siglo
+322	arbotantes	Estructura en forma de medio arco colocada en la parte exterior de un edificio que transmite el peso de la bóveda hacia los contrafuertes.
+322	Jugendstil	Nombre que recibe el estilo modernista alemán, derivado del título de la revista Jugend, fundada en 1896.
+327	besugos	Tonto, atontado.
+328	duermevela	Sueño ligero.
+328	dandy y bon vivant	Persona bohemia o dandy. Cultivar la ociosidad, la elegancia o la extravagancia en el vestir, gustar de la buena mesa y bebida, pueden considerarse rasgos del bon vivant.
+328	hedonismo	El hedonismo ? es una doctrina moral que establece la satisfacción como fin superior y fundamento de la vida. 
+330	refectorio	Sala en conventos, monasterios y ciertos colegios que se utiliza como comedor común.
+331	Vedas	Tiempo durante el cual está prohibido cazar o pescar en un determinado lugar o una determinada especie.
+331	Madamina, il catalogo è questo, delle donne ch'amò il padrón mío. Un catalogo eglièche ho fatt'io. Osservate, leggete con me.	Traducción: Madamina, este es el catálogo, de las mujeres que amaron el padrón mío. Un catálogo heèche que hice. Mira, lee conmigo.
+331	priápico	Dicho de un hombre: Que tiene una exagerada actividad sexual.
+332	conspicuo	Que goza de gran prestigio.
+333	affaire	Negocio, asunto o caso ilegal o escandaloso.
+336	guiñapo	Ropa o trozo de tela que está rota, sucia y muy gastada.
+337	convidado	Persona que ha sido invitada a una celebración o un acontecimiento.
+337	hierática	Que es solemne e inexpresivo, se mueve poco y no exterioriza sentimientos.
+342	quid	Esencia, razón, porqué de una cosa. 
+343	flemático	Que tiene un temperamento apático y se comporta o actúa con tranquilidad excesiva.
+343	veleidoso	Que es poco constante en sus actos, gustos o ideas.
+346	esnobismo	Actitud de la persona esnob.
+348	ápice	Punta o extremo de una cosa; especialmente, de la lengua.
+348	impostar	Controlar el nivel y la intensidad de la voz para poder emitir un sonido uniforme y en su plenitud, sin vacilación ni temblor.
+349	salomónica	Que pretende dar parte de razón a todos los implicados.
+349	deleznables	Que es despreciable y no merece ser tenido en consideración.
+353	Vanitas vanitatem	vanidad de vanidades
+354	fascismo	Movimiento político y social de carácter totalitario y nacionalista fundado en Italia por Benito Mussolini después de la primera guerra mundial.
+358	timorato	Que tiene miedo ante situaciones nuevas.
+359	parabienes	Expresión con que se muestra a alguien el deseo de que un hecho o un suceso que le afecta le proporcione felicidad.
+361	extático	Que está en éxtasis.
+361	obnibulada	es un estado menos severo que el estupor, la persona responde correctamente a las órdenes complejas
+364	arisca	Que es áspero y huidizo en el trato.
+367	parsimonia	Calma o tranquilidad ceremoniosa con que se hace algo
+367	chalado	Que ha perdido el juicio o se comporta como tal.
+368	cretenses	Relativo a Creta, isla de Grecia, o a sus habitantes.
+369	denuedo	Valor, energía y decisión con que se ejecuta una acción.
+370	sibilina	Que es misterioso porque parece que encierra un secreto importante o que puede tener varios significados ocultos.
+371	lucubraciones	Pensamiento, reflexión o hipótesis que es producto de la meditación.
+375	benigno	Que se caracteriza por mostrar buena voluntad, comprensión y simpatía hacia una persona o un grupo.
+379	mohínos	Que está triste, abatido o disgustado.
+379	reticencia	Hecho de insinuar o no decir directamente algo, generalmente con intención maliciosa.
+379	artero	Astuto, malintencionado.
+380	animadversión	criticismo o censura
+382	sendos	Establece una relación de uno a uno entre los miembros de un conjunto de dos o más cosas o personas y los de otro conjunto de cosas o personas denotadas por el nombre al cual acompaña.
+383	telúrico	Del planeta Tierra o relacionado con él.
+388	cohorte	Cuerpo de infantería del ejército de la antigua Roma, compuesto por varias centurias.
+389	ubicua	Que está presente en todas partes al mismo tiempo
+394	foyer	Un vestíbulo es un espacio o conjunto de cuartos grandes y extensos en un edificio o en una casa y, en particular, en un teatro, ópera, sala de conciertos, feria de muestras, cine, etc., adyacentes al auditorio.
+399	opípara	Que es copioso y espléndido.
+399	puntillosidad	Dicho de una persona: Que es muy minuciosa y concienzuda, a veces hasta la exageración, en lo que hace.
+405	agüero	Señal o indicio que se interpreta como el anuncio de un hecho futuro.
+410	a priori	A priori es una locución latina que significa “de lo anterior”. 
+412	resuello	Respiración, especialmente violenta o con ruido.
+416	vacuo	Que es superficial y carece de contenido o interés.
+417	inextricable	Difícil de desenredar; muy intrincado y confuso.
+417	primigenia	Relativo al origen o al principio.
+417	ménages à trois	es un término que describe un acuerdo doméstico de tres personas para mantener relaciones sexuales y formar un hogar.
+417	escindirse	Dividir algo material o inmaterial en dos o más partes, generalmente de importancia o valor semejante.
+421	doctas	Que posee muchos conocimientos adquiridos a fuerza de estudio.
+421	acuciantes	Que se manifiesta con fuerza, viveza y pasión.
+422	asestado	apuntar, dirigir
+422	entropía	Magnitud termodinámica que indica el grado de desorden molecular de un sistema
+426	hálito	Aliento o aire que sale por la boca al respirar, especialmente cuando arrastra humedad visible.
+429	enjuto	Que está muy delgado.
+420	oporto	Vino dulce y aromático que se elabora en el municipio portugués de Oporto.
+435	ordalía	Prueba a la que eran sometidos los acusados en la Edad Media para averiguar su culpabilidad o inocencia; como las del duelo, el fuego, el hierro candente, etc.
+436	locus amoenus	lugar ameno
+436	hélas!	¡Pobre de mí!
+437	formullismo	Una definición es una proposición o conjunto de proposiciones que exponen de manera unívoca y con precisión la comprensión alcanzada de un concepto
+444	celador	Que cela o vigila.
+444	herrumbe	Capa de color rojizo que se forma en la superficie del hierro y otros metales a causa de la oxidación provocada por la humedad o el agua.
+445	ufano	Que presume de sí mismo o se muestra orgulloso de poseer cierta cosa o de ser algo.
+448	rara avis	raras opiniones
+450	temerida	Comportamiento o actitud de la persona temeraria.
+452	dilaciones	Retraso en un proceso o actividad.
+453	barbarie	Actitud de la persona o grupo que actúan fuera de las normas de cultura, en especial de carácter ético, y son salvajes, crueles o faltos de compasión hacia la vida o la dignidad de los demás.
+453	coûte que coûte	cueste lo que cueste
+454	centralitas	 es un equipo privado que permite gestionar llamadas telefónicas internas
+455	renquea	Andar una persona coja por tener una lesión en la cadera renquea a raíz del accidente.
+456	soterrados	Soterramiento es un término asociado al verbo soterrar. Esta acción consiste en llevar algo debajo de la superficie para ocultarlo o para permitir que se desarrolle enterrado.
+463	marcial	Propio de la guerra o del ejército.
+472	ad infinitum	hasta el infinito
+473	diáfana	Que deja pasar la luz a través de sí casi en su totalidad.
+482	protectorado	Soberanía parcial que un estado ejerce sobre un territorio que no está incorporado por completo a esa nación y que posee autoridades propias.
+484	misivas	Carta que se envía a una persona para informarle de algo.
+493	hecatombe	Sacrificio religioso solemne con gran número de víctimas.
+493	postrer	último
+594	sacristía	Habitación aneja a una iglesia donde se guardan las ropas y objetos necesarios para el culto y donde los sacerdotes se revisten.
+501	frenología	Teoría médica del siglo XIX según la cual cada instinto o facultad mental radica en una zona precisa del cerebro que se corresponde con un determinado relieve del cráneo.
+501	eugenésica	1. Aplicación de las leyes biológicas de la herencia al perfeccionamiento de la especie humana.
+502	logias	Asamblea o reunión celebrada por esa asociación.
+504	patólogo	La patología es la rama de la medicina encargada del estudio de las enfermedades.
+506	rictus	madíbulas
+509	mezquindad	es un adjetivo que define la actitud de una persona ruin o hipócrita que comete acciones que pueden perjudicar a los demás
+511	acallarla	Hacer que cesen los gritos, quejas, risas o llantos de una persona, o que ésta deje de producirlos.
+511	irresimiblemente	Que no puede perdonarse por ser muy grave tu falta es grave y la considero irremisible.
+525	impenitentes	Que se mantiene firme en su comportamiento, actitud, ideas o intenciones, a pesar de castigos, advertencias o consejos.
+526	teutónicas	Relativo a una orden militar y religiosa creada por peregrinos alemanes en el siglo XII, o a los caballeros de la misma.
+529	infructuosas	Que no es de utilidad ni produce buenos resultados.
+530	vaticinar	Predecir un hecho futuro por medio de procedimientos que no se basan en la razón ni en conocimientos científicos.
+532	paliar	Disminuir o hacer más soportable algo negativo, en especial un daño físico o moral.
+533	zafiedad	Que es inculto y no tiene finura.
+534	armisticio	Acuerdo que firman dos o más países en guerra cuando deciden dejar de combatir durante cierto tiempo con el fin de discutir una posible paz.
+534	gambito	En el juego del ajedrez, jugada que consiste en sacrificar una pieza al principio de la partida, generalmente un peón, para lograr una posición favorable y en espera de obtener ventajas posteriores.
+537	zaherirlo	Hacer o decir una cosa para molestar o humillar a una persona sus ataques verbales zahieren a cualquiera. ofender, vejar.
+539	fatuo	Que se muestra engreído en su actitud, comportamiento o manera de hablar.
+540	vileza	Cualidad o condición de vil.
+543	prístino	Que se mantiene inalterado, puro, tal como era en su forma primera u original.
+543	veleidad	Capricho o cambio de estado de ánimo sin una causa justificada.
+546	ungido	Los ungidos? es el término usado por el grupo religioso de los testigos de Jehová para nombrar a una parte especial de sus miembros
+546	supurar	Formar o echar pus una herida
+546	estertor	Respiración anhelosa, con ronquido sibilante, propio de la agonía y el coma.
+547	oprobioso	Deshonra o vergüenza públicas.
+547	yermo	Que no tiene vegetación y no está cultivado o no se puede cultivar.
