@@ -4,72 +4,54 @@ $(document).ready(function() {
     $.ajax({
       url: '/get_cpu_usage',
       dataType: 'json',
+     // data: {Server1: $('server1_new').text(), Server2: $('server2_new').text(), Server3: $('#server3_new').text()},
+     // data: {votos1: $('#votos1_new').val(), votos2: $('#votos2_new').val(), votos3: $('#votos3_new').val()},
+    //data: {"Server 1": serv1, "Server 2": serv2, "Server 3": serv3, votos1: 3, votos2: vot2, votos3: vot3 },
       success: function(json) {
         $('#cpu_usage').text(json.result + '% ');
       }
     });
   }, 1000);
 
+	//xlabels.push(servers);
+
   // Initialize graph
-  var $c = $('<div class="graph"/>').appendTo('#graphs');
-  var dur = 120;
-  var past = Date.now() - dur * 1000;
-  var options = {
-    lines: {
-      fill: true,
-      lineWidth: 0,
-      fillColor: {colors: [ { opacity: 0 }, { opacity: 1 } ] }
+
+const ctx = document.getElementById('chart').getContext('2d');
+//const xlabels = [];
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        //labels: xlabels,
+        labels: ['Server 1', 'Server 2', 'Server 3'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12,19, 13],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)' 
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+        }]
     },
-    grid: { borderWidth: 1, borderColor: '#ccc'},
-    xaxis: { mode: 'time', ticks: 5 },
-    legend: { labelBoxBorderColor: '#fff' },
-    colors: [ '#fec', '#396', '#e39', '9e2' ],
-    hooks: {
-      draw: [function(plot, canvas) {
-        canvas.font = '13px sans-serif';
-        canvas.fillStyle = '#aaa';
-        canvas.fillText('Resource Usage', 35, 25);
-      }]
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
     }
-  };
-  var plot = $.plot($c, [], options);
+});
 
-  var updateGraph = function(counter) {
-    var data = plot.getData();
-    var now = Date.now();
-    var oldest = now - dur * 1000;
-    data[0] = {
-      show: false,
-      data: [[oldest, null], [now, null]]
-    };
 
-    console.log(data);
 
-    // Remove old points
-    $.each(data, function(di, d) {
-      while (d.data.length > 0 && d.data[0][0] < oldest) {
-        d.data.shift();
-      }
-    });
-
-    // Add new points
-    var new_datapoint = [now, counter];
-    if (data[1]) {
-      data[1].label = 'memory';
-      data[1].data.push(new_datapoint);
-    } else {
-      data[1] = [{ data: [new_datapoint] }];
-    }
-
-    // Redraw the graph
-    plot.setData(data);
-    plot.setupGrid();
-    plot.draw();
-  };
-
-  // Create Websocket connection. For simplicity, no reconnect logic is here.
-  var ws = new WebSocket('ws://' + location.host);
-  ws.onmessage = function(ev) {
-    updateGraph(ev.data);
-  };
+    
 });
